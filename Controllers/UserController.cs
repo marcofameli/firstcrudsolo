@@ -4,13 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using CRUD.Context;
 using CRUD.Entities;
+using CRUD.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 
 namespace CRUD.Controllers
 {
     [ApiController]
-    [Route("(User)")]
+    [Route("[Controller]")]
     public class UserController : ControllerBase
     {
 
@@ -21,8 +22,14 @@ namespace CRUD.Controllers
             _context = context;
         }
         [HttpPost()]
-        public IActionResult Create(User user)
-        {
+        public IActionResult Create(UserDTO userDTO)
+        {   
+            var user = new User 
+            {
+                Name = userDTO.Name,
+                Age = userDTO.Age,
+                Work = userDTO.Work
+            };
             _context.Add(user);
             _context.SaveChanges();
             return CreatedAtAction(nameof(GetById), new {id = user.Id}, user);
@@ -46,16 +53,16 @@ namespace CRUD.Controllers
         }
 
         [HttpPatch("{id}")]
-        public IActionResult Refresh(int id, User user)
+        public IActionResult Refresh(int id, UserDTO userDTO)
         {
             var userBanco = _context.Users.Find(id);
 
             if (userBanco == null)
                 return NotFound();
 
-            userBanco.Name = user.Name;
-            userBanco.Age = user.Age;
-            userBanco.Work = user.Work;
+            userBanco.Name = userDTO.Name;
+            userBanco.Age = userDTO.Age;
+            userBanco.Work = userDTO.Work;
 
             _context.Users.Update(userBanco);
             _context.SaveChanges();

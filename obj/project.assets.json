@@ -2402,11 +2402,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MARQUOLA\\Desktop\\CRUD\\CRUD.csproj",
+      "projectUniqueName": "C:\\Users\\MARQUOLA\\Desktop\\CRUD simples (usar como exemplo)\\CRUD.csproj",
       "projectName": "CRUD",
-      "projectPath": "C:\\Users\\MARQUOLA\\Desktop\\CRUD\\CRUD.csproj",
+      "projectPath": "C:\\Users\\MARQUOLA\\Desktop\\CRUD simples (usar como exemplo)\\CRUD.csproj",
       "packagesPath": "C:\\Users\\MARQUOLA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MARQUOLA\\Desktop\\CRUD\\obj\\",
+      "outputPath": "C:\\Users\\MARQUOLA\\Desktop\\CRUD simples (usar como exemplo)\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MARQUOLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2429,6 +2429,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2469,7 +2474,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

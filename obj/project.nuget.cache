@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H+yX/JrIPZKutJF+imVwQ/H7Rv407qBv1A2TeemWPEC47yj5Hpub+bB4MT3u5hYPxorkmkSjlsMuWSVFqV8+IA==",
+  "dgSpecHash": "FS6WZPPk3X47yCF3UXK6X5cE9brl3DNjZJy570Y1EL5Aj1LLjbq7qJNIm35dEUKCO5TrxOHtyiS5CENe2XC02Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MARQUOLA\\Desktop\\CRUD\\CRUD.csproj",
+  "projectFilePath": "C:\\Users\\MARQUOLA\\Desktop\\CRUD simples (usar como exemplo)\\CRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MARQUOLA\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MARQUOLA\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
